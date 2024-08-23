@@ -175,11 +175,15 @@ During training, the following plots are generated to assess the model's perform
 
 #### Daily return
 
-![Dily Return](images/daily_Returns.png)
+![AAPL_Dily_Return](AAPL_daily_returns.png)
+![AMD_Dily_Return](AMD_daily_returns.png)
 
-#### Cumulative Returns:
+#### AAPL Cumulative Returns:
 
-![Cumulative Retun](images/Cumulative_Returns:.png)
+![AAPL_Cumulative_Retun](AAPL_Cumulative_Return.png)
+
+#### AMD Cumulative Returns:
+![AMD_Cumulative_Retun](AMD_Cumulative_Return.png)
 
 #### Strategy-Monthly Return:
 ![Strategy_Monthly Retunr](images/Strategy_Monthly_Returns:.png)
