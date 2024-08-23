@@ -9,22 +9,20 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Latest-blue)
 ![Numpy](https://img.shields.io/badge/Numpy-Latest-blue)
 ![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)
-![GitHub Repo stars](https://img.shields.io/github/stars/ACM40960/project-bhupendrachaudhary08?style=social)
-
 
 ## Table of Contents
 
-1. [Abstract](#abstract)
+1. [Abstract](#Abstract)
 2. [Project Description](#project-description)
-   - [Key Components](#Key-Components)
-   - [Data Sources](#Data-Sources)
-   - [Objectives](#Objectives)
-   - [Scope of the Analysis](#Scope-of-the-Analysis)
-3. [Project Process](#project-Process)
+   - [Key Components](#key-components)
+   - [Data Sources](#data-sources)
+   - [Objective](#objective)
+   - [Scope of the Analysis](#scope-of-the-analysis)
+3. [Project Process](#project-process)
 4. [Installation](#installation)
    - [Prerequisites](#prerequisites)
-   - [Steps for Installation](#steps-for-installation)
-   - [Installation Notes](#installation-notes)
+   - [Steps for Installation](#steps_for_installation)
+   - [Installation Notes](#installation_notes)
 5. [Data collectin](#Data_collection)
    - [Data Sources](#Data_Sources)
    - [Importing Libraries](#Importing_Libraries)
@@ -35,19 +33,19 @@
    - [Daily Returns](#Daily_returns)
    - [Cumulative Returns](#Cumulative_Returns)
    - [Key Metrics](#key-metrics)
-   - [Golden Cross Strategy](#Golden_Cross_Strategy)
+   - [Golden Cross Strategy](#golden-cross-strategy)
 7. [Future Work](#future-work)
 8. [Contributing](#contributing)
 9. [Contact](#contact)
 10. [Credits](#credits)
 
-## 1.Abstract
+## 1. Abstract
 ##### AAPL and AMD are examples, and the financial analysis is not limited to these specific stocks.
 This project develops an automated risk management system for investment portfolios using Long Short-Term Memory (LSTM) networks. By processing historical time-series data, such as stock prices and trading volumes, the system predicts future risks and evaluates their impact. It incorporates advanced preprocessing, LSTM modeling, and regularization techniques to enhance prediction accuracy and mitigate overfitting. The system generates comprehensive risk reports and visualizations, improving efficiency and precision in managing financial risks and supporting better investment decisions.
 
 ## 2.Project Description
 
-### Key Components:
+### Key Components
 - **Data Preprocessing:** Cleans and normalizes financial time-series data to prepare it for modeling, including handling missing values and scaling features.
 - **LSTM Model:** Utilizes Long Short-Term Memory networks to capture complex temporal patterns and predict future risks based on historical data.
 - **Risk Detection and Assessment:** Identifies potential risks and evaluates their severity using model predictions, generating actionable insights.
@@ -61,14 +59,14 @@ The data for this project is collected from the following sources:
 - **Pandas DataReader:** Used for pulling data from various remote data sources into a pandas DataFrame.
 
 
-### Objective:
+### Objective
 - Enhance Risk Detection: Improve the ability to identify potential risks in investment portfolios using advanced machine learning techniques.
 - Accurate Risk Assessment: Provide precise evaluations of risk severity and probability based on historical and real-time data.
 - Effective Risk Mitigation: Develop and implement strategies to proactively manage and reduce identified risks.
 - Comprehensive Reporting: Generate detailed reports and visualizations to communicate risk findings and support informed decision-making.
 - Improve Efficiency and Consistency: Automate risk management processes to reduce manual effort and ensure uniform application of risk management rules.
 
-### Scope of the Analysis:
+### Scope of the Analysis
 - Data Collection: Gathering and integrating historical financial data, including stock prices, trading volumes, and economic indicators.
 - Data Preprocessing: Cleaning and normalizing data, handling missing values, and scaling features for accurate modeling.
 - Model Development: Designing and training LSTM networks to analyze time-series data and predict future risks.
