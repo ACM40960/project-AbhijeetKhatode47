@@ -41,10 +41,10 @@
     
 ##### AAPL and AMD are examples, and the financial analysis is not limited to these specific stocks.
 
-## 1. Abstract:
+## Abstract:
 This project develops an automated risk management system for investment portfolios using Long Short-Term Memory (LSTM) networks. By processing historical time-series data, such as stock prices and trading volumes, the system predicts future risks and evaluates their impact. It incorporates advanced preprocessing, LSTM modeling, and regularization techniques to enhance prediction accuracy and mitigate overfitting. The system generates comprehensive risk reports and visualizations, improving efficiency and precision in managing financial risks and supporting better investment decisions.
 
-## 2.Project Description
+## Project Description
 
 ### Key Components
 - **Data Preprocessing:** Cleans and normalizes financial time-series data to prepare it for modeling, including handling missing values and scaling features.
@@ -77,7 +77,7 @@ The data for this project is collected from the following sources:
 - Performance Evaluation: Assessing the accuracy and effectiveness of the model and risk management strategies through backtesting and validation.
 - Real-Time Analysis: Implementing real-time monitoring and updating of risk assessments based on new data.
 
-## 3.Process
+## Process
 
 - **Identify:** Detect potential risks by analyzing historical financial data and market trends using advanced data analytics and machine learning models.
 - **Assess:** Evaluate the severity and likelihood of identified risks through statistical analysis and predictive modeling, such as LSTM networks.
@@ -86,7 +86,7 @@ The data for this project is collected from the following sources:
 - **Report:** Generate detailed reports and visualizations to communicate risk findings, assessment results, and management actions clearly, providing actionable insights for stakeholders.
 - 
 
-## 4.Installation
+## Installation
    - [Prerequisites](#prerequisites)
    - [Steps for Installation](#steps-for-installation)
    - [Installation Notes](#installation-notes)
@@ -156,7 +156,7 @@ After collecting the data, it is crucial to validate it by checking for:
 - Data Quality: Ensure that data sources are reliable, as inaccurate data can lead to misleading conclusions.
 - Updating the Dataset: Regularly update the dataset to include the latest available data for continuous analysis.
 
-## 6.Results
+## Results
 #### Daily return
 
 ![AAPL_Dily_Return](AAPL_daily_returns.png)
@@ -192,7 +192,7 @@ Golden Cross: When the SMA 50 (short-term average) crosses above the SMA 200 (lo
 - Check Crossovers: Look for instances where the SMA 50 crosses above the SMA 200.
 - Investment Decision: When such a crossover occurs, it signals a potential buying opportunity.
 
-## 7.Future Work
+## Future Work
 
 Future improvements to this project include:
 
@@ -200,7 +200,7 @@ Future improvements to this project include:
 - Enhance predictive models with more advanced techniques.
 - Improve real-time data processing and alert mechanisms.
 
-## 8.Contributing
+## Contributing
 
 Contributions are welcome! If you'd like to improve this project, please fork the repository and submit a pull request. Your contributions could include adding new features, improving documentation, or fixing bugs.
 
@@ -211,9 +211,9 @@ Contributions are welcome! If you'd like to improve this project, please fork th
 3. Make your changes.
 4. Submit a pull request.
 
-## 9.Contact
+## Contact
 
 For any questions or suggestions, please open an issue or contact me at [abhijeet.khatoode@ucdconnect.ie](mailto:abhijeet.khatode@ucdconnect.ie).
 
-## 10.Credits
+## Credits
 - Libraries: yfinance, quantstats, pyportfolioopt, ta, pandas_datareader, tensorflow, matplotlib, seaborn, plotly.
