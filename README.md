@@ -1,7 +1,12 @@
 # Automated Risk Management
 ![Python](https://img.shields.io/badge/Python-v3.10%2B-blue)
 ![Tensorflow](https://img.shields.io/badge/Tensorflow-Latest-blue)
+![yfinance](https://img.shields.io/badge/yfinance-Latest-blue)
+![quantstats](https://img.shields.io/badge/quantstats-Latest-blue)
+![sklearn.linear_model](https://img.shields.io/badge/LinearRegression-Latest-blue)
+![ta](https://img.shields.io/badge/technical_analysis-Latest-blue)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Latest-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Latest-blue)
 ![Numpy](https://img.shields.io/badge/Numpy-Latest-blue)
 ![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)
 ![GitHub Repo stars](https://img.shields.io/github/stars/ACM40960/project-bhupendrachaudhary08?style=social)
@@ -20,24 +25,27 @@
    - [Prerequisites](#prerequisites)
    - [Steps for Installation](#steps-for-installation)
    - [Installation Notes](#installation-notes)
-5. [Model Training](#model-training)
-   - [Step 1: Train the Model](#step-1-train-the-model)
-   - [Step 2: Evaluate the Model](#step-2-evaluate-the-model)
-6. [Real-Time Interpretation](#real-time-interpretation)
-   - [Step 1: Run the Interpretation Script](#step-1-run-the-interpretation-script)
-   - [Step 2: Interact with the System](#step-2-interact-with-the-system)
-7. [Results](#results)
+5. [Data collectin](#Data_collection)
+   - [Data Sources](#Data_Sources)
+   - [Importing Libraries](#Importing_Libraries)
+   - [Data Description](#Data_Description)
+   - [Data Validation](#Data_Validation)
+   - [Notes on Data Collection](#Notes_on_data_collection)
+6. [Results](#results)
+   - [Daily Returns](#Daily_returns)
+   - [Cumulative Returns](#Cumulative_Returns)
    - [Key Metrics](#key-metrics)
-8. [Future Work](#future-work)
-9. [Contributing](#contributing)
-10. [Contact](#contact)
-11. [Credits](#credits)
+   - [Golden Cross Strategy](#Golden_Cross_Strategy)
+7. [Future Work](#future-work)
+8. [Contributing](#contributing)
+9. [Contact](#contact)
+10. [Credits](#credits)
 
-## Abstract
-
+## 1.Abstract
+##### AAPL and AMD are examples, and the financial analysis is not limited to these specific stocks.
 This project develops an automated risk management system for investment portfolios using Long Short-Term Memory (LSTM) networks. By processing historical time-series data, such as stock prices and trading volumes, the system predicts future risks and evaluates their impact. It incorporates advanced preprocessing, LSTM modeling, and regularization techniques to enhance prediction accuracy and mitigate overfitting. The system generates comprehensive risk reports and visualizations, improving efficiency and precision in managing financial risks and supporting better investment decisions.
 
-## Project Description
+## 2.Project Description
 
 ### Key Components:
 - **Data Preprocessing:** Cleans and normalizes financial time-series data to prepare it for modeling, including handling missing values and scaling features.
@@ -70,7 +78,7 @@ The data for this project is collected from the following sources:
 - Performance Evaluation: Assessing the accuracy and effectiveness of the model and risk management strategies through backtesting and validation.
 - Real-Time Analysis: Implementing real-time monitoring and updating of risk assessments based on new data.
 
-### Process
+## 3.Process
 
 - **Identify:** Detect potential risks by analyzing historical financial data and market trends using advanced data analytics and machine learning models.
 - **Assess:** Evaluate the severity and likelihood of identified risks through statistical analysis and predictive modeling, such as LSTM networks.
@@ -79,7 +87,7 @@ The data for this project is collected from the following sources:
 - **Report:** Generate detailed reports and visualizations to communicate risk findings, assessment results, and management actions clearly, providing actionable insights for stakeholders.
 - 
 
-## Installation
+## 4.Installation
    - [Prerequisites](#prerequisites)
    - [Steps for Installation](#steps-for-installation)
    - [Installation Notes](#installation-notes)
@@ -108,17 +116,15 @@ The data for this project is collected from the following sources:
 3. If you encounter any issues during installation, check the compatibility of your environment or refer to the package documentation.
 4. You may need to install additional packages if you extend the project beyond the current scope.
 
-## Dataset Collection
+## 5.Dataset Collection
 
-### 1. Data Sources
+###  Data Sources
 The data for this project is collected from the following sources:
 - **Yahoo Finance:** Historical stock prices, financial metrics, and other market data.
 - **Quantstats:** Provides performance metrics and risk analysis for financial data.
 - **Pandas DataReader:** Used for pulling data from various remote data sources into a pandas DataFrame.
 
-### 2. Data Collection Process
-
-#### 2.1. Importing Libraries
+#### Importing Libraries
 To start collecting data, the following libraries are imported:
 
 ```python
@@ -129,7 +135,7 @@ import pandas as pd
 import quantstats as qs
 ```
 
-## Data Description
+#### Data Description
 
 The collected dataset includes the following fields:
 - **Date:** The trading date.
@@ -151,28 +157,7 @@ After collecting the data, it is crucial to validate it by checking for:
 - Data Quality: Ensure that data sources are reliable, as inaccurate data can lead to misleading conclusions.
 - Updating the Dataset: Regularly update the dataset to include the latest available data for continuous analysis.
 
-## Model Training
-
-### Step 1: Train the Model
-
-#### Train the Model
-Run the script to train the LSTM model on historical stock data. Adjust parameters such as epochs and batch size as needed.
-
-```bash
-python src/LSTM_Model.py
-```
-
-The script performs the following steps:
-
-- **Splits the Data:** Separates the dataset into training and testing subsets.
-- **Model Training:**  Regression (Linear Regression) and sequence prediction (LSTM)
-- **Model Evaluation:** Evaluates the model using metrics such as Kurtosis, Skewness, Standard Deviation, Sharp ratio, Alpha,Beta.
-- **Model Saving:** Saves the trained model to the `artifacts/` directory.
-
-### Step 2: Evaluate the Model
-
-During training, the following plots are generated to assess the model's performance:
-
+## 6.Results
 #### Daily return
 
 ![AAPL_Dily_Return](AAPL_daily_returns.png)
@@ -186,22 +171,29 @@ During training, the following plots are generated to assess the model's perform
 
 Cumulative returns showes the volatility in the stock.
 
-### Step 2: Interact with the System
-
-- Check the console or log files for alerts and predictions.
-- Modify alert configurations and thresholds as needed.
-
-
-## Results
-
-The trained model successfully recognises the following :
-
 ### Key Metrics:
+- **Kurtosis:** Greater than 3 suggests that the stock exhibits a higher likelihood of extreme returns.
+- **Skewness:** Lesser the skewneess suggests that the stock may have the potential for larger positive returns but also could have more frequent smaller losses.
+- **Standard Deviation:** Lower standard deviation indicates that the stock's returns are closer to the mean, suggesting lower volatility and therefore lower risk.
+- **Sharp Ratio:** Higher Sharpe Ratio: Indicates a better risk-adjusted return. It means the investment is providing a higher return for the level of risk taken.
 - **Alpha and Beta Values:** Assess stock performance relative to the market.
-- **Sharpe Ratio:** Evaluate risk-adjusted returns.
-- **Predictive Accuracy:** Review model predictions against actual data.
+We use this key metrices to select the best stock to invest.
+  ![Results](Results.png)
+### Golden Cross Strategy:
+- **Concept:**
+- Simple Moving Average (SMA): The average of a stock's price over a specified period.
+- SMA 50: The 50-day moving average of the stock's price.
+- SMA 200: The 200-day moving average of the stock's price.
+Use the code given in .ipynb file.
+- **Signal:**
+Golden Cross: When the SMA 50 (short-term average) crosses above the SMA 200 (long-term average), it is considered a bullish signal, suggesting that the stock's price trend is turning positive, and it might be a good time to invest.
 
-## Future Work
+- **Implementation:**
+- Monitor Moving Averages: Calculate the SMA 50 and SMA 200 for the stock.
+- Check Crossovers: Look for instances where the SMA 50 crosses above the SMA 200.
+- Investment Decision: When such a crossover occurs, it signals a potential buying opportunity.
+
+## 7.Future Work
 
 Future improvements to this project include:
 
@@ -209,7 +201,7 @@ Future improvements to this project include:
 - Enhance predictive models with more advanced techniques.
 - Improve real-time data processing and alert mechanisms.
 
-## Contributing
+## 8.Contributing
 
 Contributions are welcome! If you'd like to improve this project, please fork the repository and submit a pull request. Your contributions could include adding new features, improving documentation, or fixing bugs.
 
@@ -220,10 +212,10 @@ Contributions are welcome! If you'd like to improve this project, please fork th
 3. Make your changes.
 4. Submit a pull request.
 
-## Contact
+## 9.Contact
 
 For any questions or suggestions, please open an issue or contact me at [abhijeet.khatoode@ucdconnect.ie](mailto:abhijeet.khatode@ucdconnect.ie).
 
-## Credits
+## 10.Credits
 - Libraries: yfinance, quantstats, pyportfolioopt, ta, pandas_datareader, tensorflow, matplotlib, seaborn, plotly.
 - Abhijeet Khatode
