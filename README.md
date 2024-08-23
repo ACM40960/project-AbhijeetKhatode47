@@ -38,9 +38,10 @@
 8. [Contributing](#contributing)
 9. [Contact](#contact)
 10. [Credits](#credits)
-
-## 1. Abstract
+    
 ##### AAPL and AMD are examples, and the financial analysis is not limited to these specific stocks.
+
+## 1. Abstract:
 This project develops an automated risk management system for investment portfolios using Long Short-Term Memory (LSTM) networks. By processing historical time-series data, such as stock prices and trading volumes, the system predicts future risks and evaluates their impact. It incorporates advanced preprocessing, LSTM modeling, and regularization techniques to enhance prediction accuracy and mitigate overfitting. The system generates comprehensive risk reports and visualizations, improving efficiency and precision in managing financial risks and supporting better investment decisions.
 
 ## 2.Project Description
