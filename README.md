@@ -217,4 +217,3 @@ For any questions or suggestions, please open an issue or contact me at [abhijee
 
 ## 10.Credits
 - Libraries: yfinance, quantstats, pyportfolioopt, ta, pandas_datareader, tensorflow, matplotlib, seaborn, plotly.
-- Abhijeet Khatode
