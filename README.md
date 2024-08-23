@@ -1,12 +1,8 @@
 # Automated Risk Management
 ![Python](https://img.shields.io/badge/Python-v3.10%2B-blue)
 ![Tensorflow](https://img.shields.io/badge/Tensorflow-Latest-blue)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-Latest-blue)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Latest-blue)
 ![Numpy](https://img.shields.io/badge/Numpy-Latest-blue)
-![SearBorn](https://img.shields.io/badge/Seaborn-0.13.2-green)
-![Random Forest](https://img.shields.io/badge/Classifier-RandomForest-green)
-![License](https://img.shields.io/badge/License-MIT-brightgreen)
 ![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)
 ![GitHub Repo stars](https://img.shields.io/github/stars/ACM40960/project-bhupendrachaudhary08?style=social)
 
@@ -19,8 +15,7 @@
    - [Data Sources](#Data-Sources)
    - [Objectives](#Objectives)
    - [Scope of the Analysis](#Scope-of-the-Analysis)
-   - [Significance of the Study](#Significance)
-3. [Project Structure](#project-structure)
+3. [Project Process](#project-Process)
 4. [Installation](#installation)
    - [Prerequisites](#prerequisites)
    - [Steps for Installation](#steps-for-installation)
@@ -33,11 +28,10 @@
    - [Step 2: Interact with the System](#step-2-interact-with-the-system)
 7. [Results](#results)
    - [Key Metrics](#key-metrics)
-10. [Future Work](#future-work)
-11. [Contributing](#contributing)
-12. [License](#license)
-13. [Contact](#contact)
-14. [Credits](#credits)
+8. [Future Work](#future-work)
+9. [Contributing](#contributing)
+10. [Contact](#contact)
+11. [Credits](#credits)
 
 ## Abstract
 
@@ -59,67 +53,31 @@ The data for this project is collected from the following sources:
 - **Pandas DataReader:** Used for pulling data from various remote data sources into a pandas DataFrame.
 
 
-###Objective:
+### Objective:
+- Enhance Risk Detection: Improve the ability to identify potential risks in investment portfolios using advanced machine learning techniques.
+- Accurate Risk Assessment: Provide precise evaluations of risk severity and probability based on historical and real-time data.
+- Effective Risk Mitigation: Develop and implement strategies to proactively manage and reduce identified risks.
+- Comprehensive Reporting: Generate detailed reports and visualizations to communicate risk findings and support informed decision-making.
+- Improve Efficiency and Consistency: Automate risk management processes to reduce manual effort and ensure uniform application of risk management rules.
 
-Enhance Risk Detection: Improve the ability to identify potential risks in investment portfolios using advanced machine learning techniques.
-Accurate Risk Assessment: Provide precise evaluations of risk severity and probability based on historical and real-time data.
-Effective Risk Mitigation: Develop and implement strategies to proactively manage and reduce identified risks.
-Comprehensive Reporting: Generate detailed reports and visualizations to communicate risk findings and support informed decision-making.
-Improve Efficiency and Consistency: Automate risk management processes to reduce manual effort and ensure uniform application of risk management rules.
+### Scope of the Analysis:
+- Data Collection: Gathering and integrating historical financial data, including stock prices, trading volumes, and economic indicators.
+- Data Preprocessing: Cleaning and normalizing data, handling missing values, and scaling features for accurate modeling.
+- Model Development: Designing and training LSTM networks to analyze time-series data and predict future risks.
+- Risk Evaluation: Assessing potential risks based on model outputs, including calculating metrics like Value-at-Risk (VaR) and risk severity.
+- Risk Mitigation: Formulating and recommending strategies for risk reduction based on analytical insights.
+- Reporting and Visualization: Creating detailed reports and visualizations to present findings, trends, and risk assessments clearly.
+- Performance Evaluation: Assessing the accuracy and effectiveness of the model and risk management strategies through backtesting and validation.
+- Real-Time Analysis: Implementing real-time monitoring and updating of risk assessments based on new data.
 
-### Supported Gestures
+### Process
 
-The system is trained to recognise the following ASL gestures:
-
-**Alphabets:**
-
-- A, B, C, D, E, F, G, H, I, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y
-
-**Numbers:**
-
-- One, Two, Three, Four, Five, Six, Seven, Eight, Nine
-
-![Signs](images/signs.jpg)
-
-## Features
-
-- **Real-time Gesture Recognition**: Detects and interprets ASL gestures using a webcam.
-- **Easy Dataset Collection**: Includes scripts for capturing and labeling gesture images.
-- **Customisable Model**: Users can extend the model to recognise additional gestures.
-- **Performance Visualisation**: Displays metrics like confusion matrices, ROC, and Precision-Recall curves.
-
-## Project Structure
-
-```plaintext
-risk_management_project/
-├── data/                          # Directory containing raw and processed data files
-│   ├── raw/                       # Subdirectory for raw data files
-│   ├── processed/                 # Subdirectory for processed data files
-├── notebooks/                     # Jupyter notebooks for exploratory analysis and model development
-│   ├── EDA.ipynb                  # Notebook for Exploratory Data Analysis
-│   ├── risk_analysis.ipynb        # Notebook for risk and return analysis
-│   ├── portfolio_optimization.ipynb  # Notebook for portfolio optimization
-│   ├── forecasting.ipynb          # Notebook for time series analysis and forecasting
-├── models/                        # Directory to save trained models
-├── reports/                       # Generated reports and visualizations
-│   ├── figures/                   # Subdirectory for figures and plots
-├── src/                           # Source code for the project
-│   ├── config.py                  # Configuration file with paths and constants
-│   ├── data_preprocessing.py      # Script for data cleaning and preprocessing
-│   ├── feature_engineering.py     # Script for feature engineering
-│   ├── risk_analysis.py           # Script for risk and return calculations
-│   ├── portfolio_optimization.py  # Script for portfolio optimization
-│   ├── forecasting.py             # Script for time series forecasting
-│   ├── visualization.py           # Script for creating visualizations
-│   ├── utils.py                   # Utility functions
-├── tests/                         # Directory for unit tests
-│   ├── test_data_preprocessing.py # Unit tests for data preprocessing
-│   ├── test_risk_analysis.py      # Unit tests for risk analysis
-├── requirements.txt               # Python dependencies
-├── .gitignore                     # Files and directories to ignore in git
-└── README.md                      # Project documentation
-
-```
+- **Identify:** Detect potential risks by analyzing historical financial data and market trends using advanced data analytics and machine learning models.
+- **Assess:** Evaluate the severity and likelihood of identified risks through statistical analysis and predictive modeling, such as LSTM networks.
+- **Manage:** Develop and implement strategies to mitigate and manage the identified risks, including adjustments to portfolio allocations and risk-reducing actions.
+- **Monitor:** Continuously track and review risk factors and mitigation strategies in real-time, adjusting as necessary based on new data and evolving market conditions.
+- **Report:** Generate detailed reports and visualizations to communicate risk findings, assessment results, and management actions clearly, providing actionable insights for stakeholders.
+- 
 
 ## Installation
    - [Prerequisites](#prerequisites)
@@ -210,72 +168,57 @@ After collecting the data, it is crucial to validate it by checking for:
 
 ### Step 1: Train the Model
 
-To train the Random Forest model on the processed dataset, run the following script:
+#### Train the Model
+Run the script to train the LSTM model on historical stock data. Adjust parameters such as epochs and batch size as needed.
 
 ```bash
-python src/model_training.py
+python src/LSTM_Model.py
 ```
 
 The script performs the following steps:
 
 - **Splits the Data:** Separates the dataset into training and testing subsets.
-- **Model Training:** Trains a RandomForest classifier.
-- **Model Evaluation:** Evaluates the model using metrics such as accuracy, confusion matrices, ROC curves, and Precision-Recall curves.
+- **Model Training:**  Regression (Linear Regression) and sequence prediction (LSTM)
+- **Model Evaluation:** Evaluates the model using metrics such as Kurtosis, Skewness, Standard Deviation, Sharp ratio, Alpha,Beta.
 - **Model Saving:** Saves the trained model to the `artifacts/` directory.
 
 ### Step 2: Evaluate the Model
 
 During training, the following plots are generated to assess the model's performance:
 
-#### Confusion Matrix:
+#### Daily return
 
-![Confusion Matrix](images/confusion-matrix.png)
+![Dily Return](images/daily_Returns.png)
 
-#### ROC and Precision-Recall Curves:
+#### Cumulative Returns:
 
-![ROC Curve](images/roc-curve.png)
+![Cumulative Retun](images/Cumulative_Returns:.png)
 
-## Real-Time Interpretation
-
-### Step 1: Run the Interpretation Script
-
-Once the model is trained, run the following script to start real-time gesture recognition:
-
-```bash
-python src/app.py
-```
+#### Strategy-Monthly Return:
+![Strategy_Monthly Retunr](images/Strategy_Monthly_Returns:.png)
 
 ### Step 2: Interact with the System
 
-- The script uses your webcam to detect hand gestures in real-time.
-- **Confirm Letters:** Press the `spacebar` to confirm a detected letter and add it to the sentence.
-- **Create Sentences:** The system allows you to construct sentences by confirming individual letters.
-- **Delete the Last Confirmed Letter:** If you make a mistake, you can delete the last confirmed letter by pressing the `B` key.
-- **Add Space:** Press the `S` key to add a space between words.
+- Check the console or log files for alerts and predictions.
+- Modify alert configurations and thresholds as needed.
 
-[//]: # "#### Example Video:"
-[//]: # "Add a video here showcasing the real-time gesture recognition in action."
 
 ## Results
 
-The trained model successfully recognises the following ASL gestures:
-
-- **Alphabets:** A, B, C, D, E, F, G, H, I, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y
-- **Numbers:** One, Two, Three, Four, Five, Six, Seven, Eight, Nine
+The trained model successfully recognises the following :
 
 ### Key Metrics:
-
-- **Accuracy:** 100% on the test set.
-- **AUC:** 1.00 for all gestures.
-- **Precision-Recall:** 1.00 for all gestures.
+- **Alpha and Beta Values:** Assess stock performance relative to the market.
+- **Sharpe Ratio:** Evaluate risk-adjusted returns.
+- **Predictive Accuracy:** Review model predictions against actual data.
 
 ## Future Work
 
 Future improvements to this project include:
 
-- **Expanding the Gesture Set:** Adding support for more complex gestures, two-handed gestures, and dynamic gestures involving motion.
-- **Improving Generalisation:** Collecting a larger, more diverse dataset to improve model robustness in different lighting conditions and environments.
-- **Integrating with Other Applications:** Developing a mobile or web application to make the system more accessible in real-world scenarios.
+- Incorporate additional stocks and financial instruments.
+- Enhance predictive models with more advanced techniques.
+- Improve real-time data processing and alert mechanisms.
 
 ## Contributing
 
@@ -288,14 +231,10 @@ Contributions are welcome! If you'd like to improve this project, please fork th
 3. Make your changes.
 4. Submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Contact
 
-For any questions or suggestions, please open an issue or contact me at [bhupendra.chaudhary@ucdconnect.ie](mailto:bhupendra.chaudhary@ucdconnect.ie).
+For any questions or suggestions, please open an issue or contact me at [abhijeet.khatoode@ucdconnect.ie](mailto:abhijeet.khatode@ucdconnect.ie).
 
 ## Credits
-
-This project is in collaboration with [Sahil Chalkhure](https://github.com/ACM40960/project-sahilchalkhure26)
+- Libraries: yfinance, quantstats, pyportfolioopt, ta, pandas_datareader, tensorflow, matplotlib, seaborn, plotly.
+- Abhijeet Khatode
