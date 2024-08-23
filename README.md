@@ -179,14 +179,12 @@ During training, the following plots are generated to assess the model's perform
 ![AMD_Dily_Return](AMD_daily_returns.png)
 
 #### AAPL Cumulative Returns:
-
 ![AAPL_Cumulative_Retun](AAPL_Cumulative_Return.png)
 
 #### AMD Cumulative Returns:
 ![AMD_Cumulative_Retun](AMD_Cumulative_Return.png)
 
-#### Strategy-Monthly Return:
-![Strategy_Monthly Retunr](images/Strategy_Monthly_Returns:.png)
+Cumulative returns showes the volatility in the stock.
 
 ### Step 2: Interact with the System
 
