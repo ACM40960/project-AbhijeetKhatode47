@@ -97,22 +97,9 @@ The data for this project is collected from the following sources:
    git clone https://github.com/ACM40960/project-AbhijeetKhatode47/risk_management_project.git
    cd risk_management_project
 
-2. **Create a virtual environment:**
-
-    - **On macOS/Linux:**
-     ```sh
-     python3 -m venv venv
-     source venv/bin/activate
-    ```
-   - **On Windows:**
-     ```sh
-     python -m venv venv
-     venv\Scripts\activate
-     ```
-
-4. **Install the dependencies:**
+2. **Install the dependencies:**
    ```sh
-    pip install -r requirements.txt
+    !pip install -r requirements.txt
    ```
 
 ### Installation Notes
