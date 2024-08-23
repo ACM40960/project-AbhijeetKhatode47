@@ -216,4 +216,4 @@ Contributions are welcome! If you'd like to improve this project, please fork th
 For any questions or suggestions, please open an issue or contact me at [abhijeet.khatoode@ucdconnect.ie](mailto:abhijeet.khatode@ucdconnect.ie).
 
 ## Credits
-- Libraries: yfinance, quantstats, pyportfolioopt, ta, pandas_datareader, tensorflow, matplotlib, seaborn, plotly.
+Libraries: yfinance, quantstats, pyportfolioopt, ta, pandas_datareader, tensorflow, matplotlib, seaborn, plotly.
